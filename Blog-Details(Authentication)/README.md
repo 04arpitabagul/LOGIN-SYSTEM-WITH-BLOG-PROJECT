@@ -1,0 +1,1 @@
+// only the admin user can delete the blog post

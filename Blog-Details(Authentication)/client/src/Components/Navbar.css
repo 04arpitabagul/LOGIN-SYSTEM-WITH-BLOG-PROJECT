@@ -1,0 +1,35 @@
+.brand-glow {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #d946ef; /* Neon Pink */
+  text-shadow: 0 0 6px #d946ef, 0 0 12px #c026d3, 0 0 20px #a21caf;
+}
+.custom-nav-link {
+  position: relative;
+  color: #e0e0e0 !important; /* Soft White */
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.6px;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(to right, #d946ef, #9333ea);
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-nav-link:hover {
+  color: #d946ef !important;
+  text-shadow: 0 0 4px #d946ef;
+}
